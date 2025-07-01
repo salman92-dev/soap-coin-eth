@@ -171,7 +171,7 @@ li,p {
 }
 
 .header .navbar .left-side-menu a img{
-   width: 8vw;
+   width: 6vw;
 }
 
 .center-menu {
@@ -309,18 +309,26 @@ li,p {
   }
   /* ------------strips---------
   ---- */
+  .strips {
+    overflow: hidden;
+    padding: 9vw 0;
+  }
   .strip-1{
     border: 1px solid #000;
     background: rgba(175, 223, 242, 0.60);
     overflow: hidden;
     transform: rotate(-5.96deg);
+    width: 105%;
+    margin-left: -2.5%;
   }
   .strip-2{
     border: 1px solid #000;
     background: #AFDFF2;
     overflow: hidden;
-    transform: rotate(6.06deg);
-    margin-top: -6vw;
+    transform: rotate(5.06deg);
+    margin-top: -5vw;
+    width: 105%;
+    margin-left: -2.5%;
   }
   .strip div{
     display: flex;
@@ -805,20 +813,23 @@ footer .follow div ul li a img{
 
 .center-menu {
     display: flex;
-    width: 90vw;
-    height: 55vw;
+    width: 81vw;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     gap: 2vw;
-    padding-top: 5vw;
+    padding-top: 18vw;
+    padding-bottom: 5vw;
     /* display: none; */
-    margin-top: -900px;
+    /* margin-top: -900px; */
     transition: all 1s ease-in-out;
     position: absolute;
     top: 0vw;
-    left: 0vw;
+    left: 4.5vw;
     margin-left: 0;
     background-color: #D3EFFF;
+    transform: scaleY(0);
+    transform-origin: top;
     z-index: -1;
     border-radius: 2vw;
     /* border-left: 2px solid rgba(255, 255, 20, 0.5);
@@ -844,9 +855,11 @@ footer .follow div ul li a img{
 }
 
 .center-menu.active {
-    margin-top: 0;
+    /* margin-top: 0; */
     /* display: flex; */
+    height: auto;
     background-color: #FFFDF1;
+    transform: scaleY(1);
 }
 
 .center-menu .tg {
@@ -986,9 +999,9 @@ footer .follow div ul li a img{
     }
 
     .center-menu {
-        border-radius: 2vw;
-        height: 60vw;
-        height: 70vw;
+        border-radius: 5vw;
+        /* height: 60vw; */
+        /* height: 70vw; */
     }
 
     .navbar-toggle span {
@@ -1009,7 +1022,7 @@ footer .follow div ul li a img{
       }
       
       .navbar-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(1.3vw, 1.3vw);
+        transform: rotate(45deg) translate(0.8vw, 0.8vw);
       }
       
       .navbar-toggle.active span:nth-child(2) {
